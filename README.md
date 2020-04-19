@@ -35,10 +35,10 @@ In the terminal run ``` *ssh -i **/path/my-key-pair.pem** ec2-18-219-151-71.us-e
 ## /var/www/html is the file path where you will host your HTML and CSS files and directories, and this is where the EC2 instance will look for the files to populate the server.
 
 
-I used Brackets as my text editor and the files that are linked to Filezilla. The files that are in brackets, must be named correctly and the code must have the correct paths to showcase the code on the server.
+## I used Brackets as my text editor and the files that are linked to Filezilla. The files that are in brackets, must be named correctly and the code must have the correct paths to showcase the code on the server.
 ![IT1600](Brackets.jpg)
 
-Once the code is organized correctly on your local computer, you need to connect to Filezilla in order to send to the server. In FileZilla you want to navigate to the site manager. There is where you will need to put in the correct settings. 
+## Once the code is organized correctly on your local computer, you need to connect to Filezilla in order to send to the server. In FileZilla you want to navigate to the site manager. There is where you will need to put in the correct settings. 
 
 ```
 
@@ -49,5 +49,9 @@ User: For Amazon Linux, the default user name is ec2-user. For RHEL5, the user n
 FileZilla automatically figures out which key to use.
 ```
 ![IT1600](FileZillaSetUP.jpg)
+
+## When in FileZilla, you will need to Navigate to the /var/www/html directory on the right side, which is the server side. You do this becuase we set up the public Html earlier, and only items in the HTML directory will be housed on the server.
+
+![IT1600](Var.jpg)
 
 
