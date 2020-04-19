@@ -1,30 +1,30 @@
 # Hosting HTML/CSS Code to AWS Server Via FileZilla
    ##### Created by Chase Hermanson (Cmhvz6)
 
-## This tutorial will show the basics steps that are necessary to take in order to house your HTML/CSS code to an AWS server. FileZilla will be used as the transfer system between your local system and your server.
+## * *This tutorial will show the basics steps that are necessary to take in order to house your HTML/CSS code to an AWS server. FileZilla will be used as the transfer system between your local system and your server.* * 
 
-## The inteneded audience would be early year web developers who have basic AWS and terminal experience. As long as they have been exposed to basic IT/CS technology, they should have no problem following the steps setting up the connection. They may not have the HTML/CSS to have anything populated to the HTML server, but at least the connection between the local host and AWS server will be there.
+## * *The inteneded audience would be early year web developers who have basic AWS and terminal experience. As long as they have been exposed to basic IT/CS technology, they should have no problem following the steps setting up the connection. They may not have the HTML/CSS to have anything populated to the HTML server, but at least the connection between the local host and AWS server will be there.* *
 
 
-## ** First steps would be to launch the AWS Instance. This is assumed you have an AWS educate or AWS credits because launching an instance is not free. **
+## * *First steps would be to launch the AWS Instance. This is assumed you have an AWS educate or AWS credits because launching an instance is not free.**
 
 
 ![IT1600](LaunchInstance.jpg)
 
-## **Next you'll have to configure your instance type and instance settings, this is all dependent on what you plan on doing. I currently have an AMAZON LINUX 2 AMI instance running, so I will be using that for this tutorial.**
+## * *Next you'll have to configure your instance type and instance settings, this is all dependent on what you plan on doing. I currently have an AMAZON LINUX 2 AMI instance running, so I will be using that for this tutorial* *
 
 ![IT1600](SelectType.jpg)
 
-## **And next youll have to select the instance type. And for demostration purposes I have t2.micro General purpose instance selected, mostly because it is eligible with the free tier. You're now ready to launch the instance and connect to it.**
+## * *And next youll have to select the instance type. And for demostration purposes I have t2.micro General purpose instance selected, mostly because it is eligible with the free tier. You're now ready to launch the instance and connect to it.* *
 
 ![IT1600](Settings.jpg)
 
-## **You will need to create a key pair. It will be a .pem file in order to be used with OpenSSH.**
+## * *You will need to create a key pair. It will be a .pem file in order to be used with OpenSSH.* *
 
 In the terminal run ``` *ssh -i **/path/my-key-pair.pem** ec2-18-219-151-71.us-east-2.compute.amazonaws.com* ```
 
 
-## **Once the instance is up and running and you are connected via your .pem file, next you have to set up a public HTML. You will run the following code in your terminal. The below code installs the most up to date versions of the neccessary applications.**
+## * *Once the instance is up and running and you are connected via your .pem file, next you have to set up a public HTML. You will run the following code in your terminal. The below code installs the most up to date versions of the neccessary applications.* *
 
 ```
 **sudo yum install -y httpd24 php56 mysql55-server php56-mysqlnd**
@@ -33,13 +33,13 @@ In the terminal run ``` *ssh -i **/path/my-key-pair.pem** ec2-18-219-151-71.us-e
 **sudo chmod 777 /var/www/html**
 ```
 
-## **/var/www/html is the file path where you will host your HTML and CSS files and directories, and this is where the EC2 instance will look for the files to populate the server.**
+## * */var/www/html is the file path where you will host your HTML and CSS files and directories, and this is where the EC2 instance will look for the files to populate the server.* *
 
 
-## **I used Brackets as my text editor and the files that are linked to Filezilla. The files that are in brackets, must be named correctly and the code must have the correct paths to showcase the code on the server.**
+## * *I used Brackets as my text editor and the files that are linked to Filezilla. The files that are in brackets, must be named correctly and the code must have the correct paths to showcase the code on the server.* *
 ![IT1600](Brackets.jpg)
 
-## **Once the code is organized correctly on your local computer, you need to connect to Filezilla in order to send to the server. In FileZilla you want to navigate to the site manager. There is where you will need to put in the correct settings.**
+## * *Once the code is organized correctly on your local computer, you need to connect to Filezilla in order to send to the server. In FileZilla you want to navigate to the site manager. There is where you will need to put in the correct settings.* *
 
 ```
 
@@ -51,20 +51,19 @@ FileZilla automatically figures out which key to use.
 ```
 ![IT1600](FileZillaSetUP.jpg)
 
-## **When in FileZilla, you will need to Navigate to the /var/www/html directory on the right side, which is the server side. You do this becuase we set up the public Html earlier, and only items in the HTML directory will be housed on the server.**
+## * *When in FileZilla, you will need to Navigate to the /var/www/html directory on the right side, which is the server side. You do this becuase we set up the public Html earlier, and only items in the HTML directory will be housed on the server.* *
 
 ![IT1600](Var.jpg)
 
-## **You will put your HTML/CSS codein the HTML directory which will be sent to the server. You have to rememeber that when you edit on your local host, you will need transfer the updated code to the HTML folder or just edit directly out of FileZilla.**
+## * *You will put your HTML/CSS codein the HTML directory which will be sent to the server. You have to rememeber that when you edit on your local host, you will need transfer the updated code to the HTML folder or just edit directly out of FileZilla.* *
 
-## **The next step is to connect to your instance. You will head to your running instance and click connect.** 
+## * *The next step is to connect to your instance. You will head to your running instance and click connect.* * 
 
 ![IT1600](Connect.jpg)
 
-## **That will prompt a page with your Public DNS. You can put that dns into your browser and if done correctly bring you to your html server with your website.**
+## * *That will prompt a page with your Public DNS. You can put that dns into your browser and if done correctly bring you to your html server with your website.* *
 
 ![IT1600](DNS.jpg)
 
-## **You should be prompted to your Ec2 instances HTMl web browser like this**
-
+## * *You should be prompted to your Ec2 instances HTMl web browser like this* *
 ![IT1600](Index.jpg)
