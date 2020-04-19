@@ -37,7 +37,7 @@ In the terminal run ``` *ssh -i **/path/my-key-pair.pem** ec2-18-219-151-71.us-e
 
 I used Brackets as my text editor and the files that are linked to Filezilla. The files that are in brackets, must be named correctly and the code must have the correct paths to showcase the code on the server.
 
-![IT1600] (Screen Shot 2020-04-19 at 1.56.12 PM.jpg)
+![IT1600](Screen Shot 2020-04-19 at 1.56.12 PM.jpg)
 
 
 
