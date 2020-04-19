@@ -64,3 +64,6 @@ FileZilla automatically figures out which key to use.
 
 ![IT1600](DNS.jpg)
 
+## You should be prompted to your Ec2 instances HTMl web browser like this
+
+![IT1600](Index.jpg)
