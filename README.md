@@ -20,7 +20,7 @@
 
 ## You will need to create a key pair. It will be a .pem file in order to be used with OpenSSH.
 
-In the terminal run *ssh -i **/path/my-key-pair.pem** ec2-18-219-151-71.us-east-2.compute.amazonaws.com*
+In the terminal run ``` *ssh -i **/path/my-key-pair.pem** ec2-18-219-151-71.us-east-2.compute.amazonaws.com* ```
 
 
 ## Once the instance is up and running and you are connected via your .pem file, next you have to set up a public HTML. You will run the following code in your terminal. The below code installs the most up to date versions of the neccessary applications.
