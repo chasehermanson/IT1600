@@ -8,4 +8,4 @@
 #### First steps would be to launch the AWS Instance. This is assumed you have an AWS educate or AWS credits because launching an instance is not free.
 
 
-![IT1600](../Users/chasehermanson/Desktop/Images/LaunchInstance.jpg)
+![IT1600](LaunchInstance.jpg)
