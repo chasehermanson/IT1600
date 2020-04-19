@@ -25,10 +25,12 @@ In the terminal run *ssh -i **/path/my-key-pair.pem** ec2-18-219-151-71.us-east-
 
 ## Once the instance is up and running and you are connected via your .pem file, next you have to set up a public HTML. You will run the following code in your terminal. The below code installs the most up to date versions of the neccessary applications.
 
+```
 **sudo yum install -y httpd24 php56 mysql55-server php56-mysqlnd**
 **sudo service httpd start**
 **sudo chkconfig httpd on**
 **sudo chmod 777 /var/www/html**
+```
 
 ## /var/www/html is the file path where you will host your HTML and CSS files and directories, and this is where the EC2 instance will look for the files to populate the server.
 
