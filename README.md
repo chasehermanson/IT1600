@@ -54,4 +54,13 @@ FileZilla automatically figures out which key to use.
 
 ![IT1600](Var.jpg)
 
+## You will put your HTML/CSS codein the HTML directory which will be sent to the server. You have to rememeber that when you edit on your local host, you will need transfer the updated code to the HTML folder or just edit directly out of FileZilla.
+
+## The next step is to connect to your instance. You will head to your running instance and click connect. 
+
+![IT1600](Connect.jpg)
+
+## That will prompt a page with your Public DNS. You can put that dns into your browser and if done correctly bring you to your html server with your website.
+
+![IT1600](DNS.jpg)
 
